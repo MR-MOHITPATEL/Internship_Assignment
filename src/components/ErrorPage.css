@@ -1,0 +1,21 @@
+.error-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+.error-page h1 {
+  font-size: 3rem;
+  color: #e74c3c;
+}
+.error-page p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.error-page button {
+  padding: 10px 24px;
+  font-size: 1rem;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

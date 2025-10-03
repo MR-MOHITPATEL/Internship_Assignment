@@ -1,0 +1,56 @@
+const logger = require('../utils/logger');
+
+// ...existing code...
+
+// In your register route
+logger.info(`User registered: ${user.email}`);
+
+// After successful login:
+logger.info(`User logged in: ${user.email}`);
+
+// In your logout route handler
+logger.info(`User logged out: ${req.user.email}`);
+
+// In your create task route (e.g., backend/routes/tasks.js)
+// After task is created:
+logger.info(`Task created by ${req.user.email}: ${task.title} (${task._id})`);
+
+// In your update task route
+logger.info(`Task updated by ${req.user.email}: ${task.title} (${task._id})`);
+
+// In your delete task route
+logger.info(`Task deleted by ${req.user.email}: ${task.title} (${task._id})`);
+
+// ...existing code...
+
+[2025-10-03T07:59:18.956Z] INFO: POST /api/auth/login - ::1
+[2025-10-03T07:59:43.496Z] INFO: POST /api/auth/register - ::1
+[2025-10-03T07:59:48.150Z] INFO: POST /api/auth/login - ::1
+[2025-10-03T07:59:48.502Z] INFO: GET /api/auth/profile - ::1
+[2025-10-03T07:59:48.506Z] INFO: GET /api/tasks/stats/overview - ::1
+[2025-10-03T07:59:48.509Z] INFO: GET /api/tasks?sortBy=createdAt&sortOrder=desc&limit=50 - ::1
+[2025-10-03T07:59:48.581Z] INFO: GET /api/auth/profile - ::1
+[2025-10-03T07:59:48.689Z] INFO: GET /api/tasks/stats/overview - ::1
+[2025-10-03T07:59:48.721Z] INFO: GET /api/tasks?sortBy=createdAt&sortOrder=desc&limit=50 - ::1
+[2025-10-03T08:01:26.561Z] INFO: POST /api/auth/login 200 - ::1 (356ms)
+[2025-10-03T08:01:26.776Z] INFO: GET /api/auth/profile 200 - ::1 (190ms)
+[2025-10-03T08:01:26.785Z] INFO: GET /api/tasks?sortBy=createdAt&sortOrder=desc&limit=50 304 - ::1 (192ms)
+[2025-10-03T08:01:26.795Z] INFO: GET /api/auth/profile 304 - ::1 (12ms)
+[2025-10-03T08:01:26.802Z] INFO: GET /api/tasks?sortBy=createdAt&sortOrder=desc&limit=50 304 - ::1 (14ms)
+[2025-10-03T08:01:26.820Z] INFO: GET /api/tasks/stats/overview 304 - ::1 (224ms)
+[2025-10-03T08:01:26.883Z] INFO: GET /api/tasks/stats/overview 304 - ::1 (62ms)
+[2025-10-03T08:01:56.091Z] INFO: POST /api/tasks 201 - ::1 (79ms)
+[2025-10-03T08:01:56.176Z] INFO: GET /api/tasks/stats/overview 200 - ::1 (80ms)
+[2025-10-03T08:02:10.671Z] INFO: PUT /api/tasks/68df82f453c24dec466709e1 200 - ::1 (180ms)
+[2025-10-03T08:02:10.698Z] INFO: GET /api/tasks/stats/overview 200 - ::1 (22ms)
+[2025-10-03T08:02:17.780Z] INFO: GET /api/auth/profile 304 - ::1 (66ms)
+[2025-10-03T08:02:17.791Z] INFO: GET /api/auth/profile 304 - ::1 (10ms)
+[2025-10-03T08:02:36.729Z] INFO: PUT /api/auth/profile 200 - ::1 (33ms)
+[2025-10-03T08:02:39.063Z] INFO: GET /api/auth/profile 200 - ::1 (58ms)
+[2025-10-03T08:02:39.180Z] INFO: GET /api/tasks?sortBy=createdAt&sortOrder=desc&limit=50 200 - ::1 (172ms)
+[2025-10-03T08:02:39.181Z] INFO: GET /api/tasks/stats/overview 304 - ::1 (172ms)
+[2025-10-03T08:02:39.185Z] INFO: GET /api/auth/profile 304 - ::1 (121ms)
+[2025-10-03T08:02:39.206Z] INFO: GET /api/tasks?sortBy=createdAt&sortOrder=desc&limit=50 304 - ::1 (24ms)
+[2025-10-03T08:02:39.211Z] INFO: GET /api/tasks/stats/overview 304 - ::1 (25ms)
+[2025-10-03T08:02:51.090Z] INFO: DELETE /api/tasks/68df82f453c24dec466709e1 200 - ::1 (56ms)
+[2025-10-03T08:02:51.182Z] INFO: GET /api/tasks/stats/overview 200 - ::1 (88ms)
