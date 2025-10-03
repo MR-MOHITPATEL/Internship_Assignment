@@ -73,11 +73,3 @@ It demonstrates a **React.js frontend** integrated with a **Node.js/Express back
 | Get Logs        | GET    | /api/logs                                   | (Auth header if protected)  |
 
 ---
-
-## Logging
-
-- All server, API, and error logs are saved to `backend/logs/app.log`.
-- Logs include HTTP method, URL, status code, user actions, and errors.
-- Fetch logs via: `GET /api/logs` (use Postman).
-
----
