@@ -73,3 +73,6 @@ It demonstrates a **React.js frontend** integrated with a **Node.js/Express back
 | Get Logs        | GET    | /api/logs                                   | (Auth header if protected)  |
 
 ---
+## Author
+**Mohit Patel**  
+[GitHub](https://github.com/MR-MOHITPATEL)
