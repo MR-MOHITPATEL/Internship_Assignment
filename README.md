@@ -1,4 +1,4 @@
-# Project Management App
+# Frontend Developer Assignment 
 
 This project was built as part of the **Frontend Developer Internship Assignment**.  
 It demonstrates a **React.js frontend** integrated with a **Node.js/Express backend** using **JWT authentication** and **CRUD functionality**.
