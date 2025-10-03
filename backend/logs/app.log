@@ -1,27 +1,3 @@
-const logger = require('../utils/logger');
-
-// ...existing code...
-
-// In your register route
-logger.info(`User registered: ${user.email}`);
-
-// After successful login:
-logger.info(`User logged in: ${user.email}`);
-
-// In your logout route handler
-logger.info(`User logged out: ${req.user.email}`);
-
-// In your create task route (e.g., backend/routes/tasks.js)
-// After task is created:
-logger.info(`Task created by ${req.user.email}: ${task.title} (${task._id})`);
-
-// In your update task route
-logger.info(`Task updated by ${req.user.email}: ${task.title} (${task._id})`);
-
-// In your delete task route
-logger.info(`Task deleted by ${req.user.email}: ${task.title} (${task._id})`);
-
-// ...existing code...
 
 [2025-10-03T07:59:18.956Z] INFO: POST /api/auth/login - ::1
 [2025-10-03T07:59:43.496Z] INFO: POST /api/auth/register - ::1
