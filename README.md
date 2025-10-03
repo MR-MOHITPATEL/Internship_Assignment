@@ -1,8 +1,7 @@
 # Project Management App
 
-A full-stack project management application built with **Node.js**, **Express**, **MongoDB**, and **React**.  
-This app allows users to register, log in, manage tasks (CRUD), and view statistics.  
-All server and API activity is logged for auditing and debugging.
+This project was built as part of the **Frontend Developer Internship Assignment**.  
+It demonstrates a **React.js frontend** integrated with a **Node.js/Express backend** using **JWT authentication** and **CRUD functionality**.
 
 ---
 
@@ -12,8 +11,6 @@ All server and API activity is logged for auditing and debugging.
 - Task management (Create, Read, Update, Delete)
 - Task filtering, searching, and statistics
 - Profile management with default avatar support
-- Centralized error handling and validation
-- Server/API logs saved to `backend/logs/app.log`
 - API endpoint to fetch logs for auditing
 - Responsive React frontend
 
